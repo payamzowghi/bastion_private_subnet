@@ -1,8 +1,4 @@
 resource "aws_instance" "bastion" {
-#  connection {
-#    user     = "ubuntu"
-#    key_file = "${}"
-#  }
 
   ami             = "ami-a58d0dc5"
   instance_type   = "${var.instance_type}"
