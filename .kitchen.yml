@@ -1,0 +1,27 @@
+---
+driver:
+  name: terraform
+
+provisioner:
+  name: terraform
+  variable_files:
+    - terraform.tfvars
+#    - variables.tf
+
+platforms:
+  - name: ubuntu
+
+transport:
+  name: ssh
+  ssh_key: ~/.ssh/wordpress_key
+
+verifier:
+  name: terraform
+  format: doc
+  groups:
+  - name: bastion
+    hostnames: bastion_host_dns
+    username: ubuntu
+
+suites:
+  - name: default

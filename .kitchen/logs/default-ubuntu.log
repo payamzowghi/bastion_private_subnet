@@ -1,0 +1,121 @@
+I, [2017-04-24T13:26:25.289232 #27085]  INFO -- default-ubuntu: -----> Destroying <default-ubuntu>...
+I, [2017-04-24T13:26:25.570032 #27085]  INFO -- default-ubuntu: Refreshing Terraform state in-memory prior to plan...
+I, [2017-04-24T13:26:25.570334 #27085]  INFO -- default-ubuntu: The refreshed state will be used to calculate this plan, but
+I, [2017-04-24T13:26:25.570378 #27085]  INFO -- default-ubuntu: will not be persisted to local or remote state storage.
+I, [2017-04-24T13:26:25.570413 #27085]  INFO -- default-ubuntu: 
+I, [2017-04-24T13:26:25.586664 #27085]  INFO -- default-ubuntu: data.template_file.index: Refreshing state...
+I, [2017-04-24T13:26:27.482958 #27085]  INFO -- default-ubuntu: aws_eip.nat: Refreshing state... (ID: eipalloc-a037539a)
+I, [2017-04-24T13:26:27.483205 #27085]  INFO -- default-ubuntu: aws_vpc.vpc_bastion: Refreshing state... (ID: vpc-4c97bd2b)
+I, [2017-04-24T13:26:29.512189 #27085]  INFO -- default-ubuntu: aws_subnet.bastion: Refreshing state... (ID: subnet-6d56170a)
+I, [2017-04-24T13:26:29.512515 #27085]  INFO -- default-ubuntu: aws_internet_gateway.ig_bastion: Refreshing state... (ID: igw-d702eab0)
+I, [2017-04-24T13:26:29.512593 #27085]  INFO -- default-ubuntu: aws_subnet.private_subnet: Refreshing state... (ID: subnet-5d6ff714)
+I, [2017-04-24T13:26:29.512854 #27085]  INFO -- default-ubuntu: aws_security_group.server: Refreshing state... (ID: sg-fb45fc80)
+I, [2017-04-24T13:26:29.665034 #27085]  INFO -- default-ubuntu: aws_route_table.bastion: Refreshing state... (ID: rtb-1727fd71)
+I, [2017-04-24T13:26:29.685933 #27085]  INFO -- default-ubuntu: aws_security_group.bastion: Refreshing state... (ID: sg-1646ff6d)
+I, [2017-04-24T13:26:29.686732 #27085]  INFO -- default-ubuntu: aws_nat_gateway.nat_gw: Refreshing state... (ID: nat-0d63094cf7aae3244)
+I, [2017-04-24T13:26:29.855940 #27085]  INFO -- default-ubuntu: aws_instance.bastion: Refreshing state... (ID: i-0594f813da0b146ce)
+I, [2017-04-24T13:26:29.863427 #27085]  INFO -- default-ubuntu: aws_route_table.rt_private_subnet: Refreshing state... (ID: rtb-1c27fd7a)
+I, [2017-04-24T13:26:30.015844 #27085]  INFO -- default-ubuntu: aws_route_table_association.rt_association_private_subnet: Refreshing state... (ID: rtbassoc-53dd0d2a)
+I, [2017-04-24T13:26:30.036349 #27085]  INFO -- default-ubuntu: aws_route_table_association.bastion: Refreshing state... (ID: rtbassoc-0cd70775)
+I, [2017-04-24T13:26:30.957606 #27085]  INFO -- default-ubuntu: aws_instance.server: Refreshing state... (ID: i-06b64fb0ea5d0e11e)
+I, [2017-04-24T13:26:31.965338 #27085]  INFO -- default-ubuntu: 
+I, [2017-04-24T13:26:31.983694 #27085]  INFO -- default-ubuntu: The Terraform execution plan has been generated and is shown below.
+I, [2017-04-24T13:26:31.983961 #27085]  INFO -- default-ubuntu: Resources are shown in alphabetical order for quick scanning. Green resources
+I, [2017-04-24T13:26:31.984059 #27085]  INFO -- default-ubuntu: will be created (or destroyed and then created if an existing resource
+I, [2017-04-24T13:26:31.984291 #27085]  INFO -- default-ubuntu: exists), yellow resources are being changed in-place, and red resources
+I, [2017-04-24T13:26:31.984413 #27085]  INFO -- default-ubuntu: will be destroyed. Cyan entries are data sources to be read.
+I, [2017-04-24T13:26:31.984497 #27085]  INFO -- default-ubuntu: 
+I, [2017-04-24T13:26:31.986657 #27085]  INFO -- default-ubuntu: Your plan was also saved to the path below. Call the "apply" subcommand
+I, [2017-04-24T13:26:31.986857 #27085]  INFO -- default-ubuntu: with this plan file and Terraform will exactly execute this execution
+I, [2017-04-24T13:26:31.987387 #27085]  INFO -- default-ubuntu: plan.
+I, [2017-04-24T13:26:31.987436 #27085]  INFO -- default-ubuntu: 
+I, [2017-04-24T13:26:31.987528 #27085]  INFO -- default-ubuntu: Path: /home/payamzowghi/Desktop/assignment/bastion_private_subnet/.kitchen/kitchen-terraform/default-ubuntu/terraform.tfplan
+I, [2017-04-24T13:26:31.987560 #27085]  INFO -- default-ubuntu: 
+I, [2017-04-24T13:26:31.987734 #27085]  INFO -- default-ubuntu: - aws_eip.nat
+I, [2017-04-24T13:26:31.988152 #27085]  INFO -- default-ubuntu: 
+I, [2017-04-24T13:26:31.988275 #27085]  INFO -- default-ubuntu: - aws_instance.bastion
+I, [2017-04-24T13:26:31.988318 #27085]  INFO -- default-ubuntu: 
+I, [2017-04-24T13:26:31.988417 #27085]  INFO -- default-ubuntu: - aws_instance.server
+I, [2017-04-24T13:26:31.988464 #27085]  INFO -- default-ubuntu: 
+I, [2017-04-24T13:26:31.988490 #27085]  INFO -- default-ubuntu: - aws_internet_gateway.ig_bastion
+I, [2017-04-24T13:26:31.988512 #27085]  INFO -- default-ubuntu: 
+I, [2017-04-24T13:26:31.988670 #27085]  INFO -- default-ubuntu: - aws_nat_gateway.nat_gw
+I, [2017-04-24T13:26:31.988700 #27085]  INFO -- default-ubuntu: 
+I, [2017-04-24T13:26:31.988722 #27085]  INFO -- default-ubuntu: - aws_route_table.bastion
+I, [2017-04-24T13:26:31.988743 #27085]  INFO -- default-ubuntu: 
+I, [2017-04-24T13:26:31.988763 #27085]  INFO -- default-ubuntu: - aws_route_table.rt_private_subnet
+I, [2017-04-24T13:26:31.988805 #27085]  INFO -- default-ubuntu: 
+I, [2017-04-24T13:26:31.988828 #27085]  INFO -- default-ubuntu: - aws_route_table_association.bastion
+I, [2017-04-24T13:26:31.988850 #27085]  INFO -- default-ubuntu: 
+I, [2017-04-24T13:26:31.989621 #27085]  INFO -- default-ubuntu: - aws_route_table_association.rt_association_private_subnet
+I, [2017-04-24T13:26:31.989701 #27085]  INFO -- default-ubuntu: 
+I, [2017-04-24T13:26:31.989766 #27085]  INFO -- default-ubuntu: - aws_security_group.bastion
+I, [2017-04-24T13:26:31.989820 #27085]  INFO -- default-ubuntu: 
+I, [2017-04-24T13:26:31.989843 #27085]  INFO -- default-ubuntu: - aws_security_group.server
+I, [2017-04-24T13:26:31.989891 #27085]  INFO -- default-ubuntu: 
+I, [2017-04-24T13:26:31.989938 #27085]  INFO -- default-ubuntu: - aws_subnet.bastion
+I, [2017-04-24T13:26:31.990007 #27085]  INFO -- default-ubuntu: 
+I, [2017-04-24T13:26:31.990038 #27085]  INFO -- default-ubuntu: - aws_subnet.private_subnet
+I, [2017-04-24T13:26:31.990081 #27085]  INFO -- default-ubuntu: 
+I, [2017-04-24T13:26:31.990107 #27085]  INFO -- default-ubuntu: - aws_vpc.vpc_bastion
+I, [2017-04-24T13:26:31.990129 #27085]  INFO -- default-ubuntu: 
+I, [2017-04-24T13:26:31.990151 #27085]  INFO -- default-ubuntu: - data.template_file.index
+I, [2017-04-24T13:26:31.990173 #27085]  INFO -- default-ubuntu: Plan: 0 to add, 0 to change, 14 to destroy.
+I, [2017-04-24T13:26:33.650909 #27085]  INFO -- default-ubuntu: aws_route_table_association.rt_association_private_subnet: Destroying...
+I, [2017-04-24T13:26:33.651008 #27085]  INFO -- default-ubuntu: aws_instance.server: Destroying...
+I, [2017-04-24T13:26:33.651460 #27085]  INFO -- default-ubuntu: aws_route_table_association.bastion: Destroying...
+I, [2017-04-24T13:26:33.786158 #27085]  INFO -- default-ubuntu: aws_route_table_association.bastion: Destruction complete
+I, [2017-04-24T13:26:33.789228 #27085]  INFO -- default-ubuntu: aws_route_table.bastion: Destroying...
+I, [2017-04-24T13:26:33.807047 #27085]  INFO -- default-ubuntu: aws_route_table_association.rt_association_private_subnet: Destruction complete
+I, [2017-04-24T13:26:33.810149 #27085]  INFO -- default-ubuntu: aws_route_table.rt_private_subnet: Destroying...
+I, [2017-04-24T13:26:34.528382 #27085]  INFO -- default-ubuntu: aws_route_table.bastion: Destruction complete
+I, [2017-04-24T13:26:34.530292 #27085]  INFO -- default-ubuntu: aws_internet_gateway.ig_bastion: Destroying...
+I, [2017-04-24T13:26:34.576345 #27085]  INFO -- default-ubuntu: aws_route_table.rt_private_subnet: Destruction complete
+I, [2017-04-24T13:26:34.580043 #27085]  INFO -- default-ubuntu: aws_nat_gateway.nat_gw: Destroying...
+I, [2017-04-24T13:26:43.651126 #27085]  INFO -- default-ubuntu: aws_instance.server: Still destroying... (10s elapsed)
+I, [2017-04-24T13:26:44.531784 #27085]  INFO -- default-ubuntu: aws_internet_gateway.ig_bastion: Still destroying... (10s elapsed)
+I, [2017-04-24T13:26:44.580549 #27085]  INFO -- default-ubuntu: aws_nat_gateway.nat_gw: Still destroying... (10s elapsed)
+I, [2017-04-24T13:26:53.651245 #27085]  INFO -- default-ubuntu: aws_instance.server: Still destroying... (20s elapsed)
+I, [2017-04-24T13:26:54.531086 #27085]  INFO -- default-ubuntu: aws_internet_gateway.ig_bastion: Still destroying... (20s elapsed)
+I, [2017-04-24T13:26:54.580849 #27085]  INFO -- default-ubuntu: aws_nat_gateway.nat_gw: Still destroying... (20s elapsed)
+I, [2017-04-24T13:27:03.651403 #27085]  INFO -- default-ubuntu: aws_instance.server: Still destroying... (30s elapsed)
+I, [2017-04-24T13:27:04.531314 #27085]  INFO -- default-ubuntu: aws_internet_gateway.ig_bastion: Still destroying... (30s elapsed)
+I, [2017-04-24T13:27:04.581145 #27085]  INFO -- default-ubuntu: aws_nat_gateway.nat_gw: Still destroying... (30s elapsed)
+I, [2017-04-24T13:27:13.651580 #27085]  INFO -- default-ubuntu: aws_instance.server: Still destroying... (40s elapsed)
+I, [2017-04-24T13:27:14.531520 #27085]  INFO -- default-ubuntu: aws_internet_gateway.ig_bastion: Still destroying... (40s elapsed)
+I, [2017-04-24T13:27:14.581623 #27085]  INFO -- default-ubuntu: aws_nat_gateway.nat_gw: Still destroying... (40s elapsed)
+I, [2017-04-24T13:27:23.652480 #27085]  INFO -- default-ubuntu: aws_instance.server: Still destroying... (50s elapsed)
+I, [2017-04-24T13:27:24.531842 #27085]  INFO -- default-ubuntu: aws_internet_gateway.ig_bastion: Still destroying... (50s elapsed)
+I, [2017-04-24T13:27:24.581670 #27085]  INFO -- default-ubuntu: aws_nat_gateway.nat_gw: Still destroying... (50s elapsed)
+I, [2017-04-24T13:27:33.651958 #27085]  INFO -- default-ubuntu: aws_instance.server: Still destroying... (1m0s elapsed)
+I, [2017-04-24T13:27:34.532364 #27085]  INFO -- default-ubuntu: aws_internet_gateway.ig_bastion: Still destroying... (1m0s elapsed)
+I, [2017-04-24T13:27:34.582159 #27085]  INFO -- default-ubuntu: aws_nat_gateway.nat_gw: Still destroying... (1m0s elapsed)
+I, [2017-04-24T13:27:35.074458 #27085]  INFO -- default-ubuntu: aws_instance.server: Destruction complete
+I, [2017-04-24T13:27:35.076574 #27085]  INFO -- default-ubuntu: aws_subnet.private_subnet: Destroying...
+I, [2017-04-24T13:27:35.078691 #27085]  INFO -- default-ubuntu: aws_instance.bastion: Destroying...
+I, [2017-04-24T13:27:35.365408 #27085]  INFO -- default-ubuntu: aws_subnet.private_subnet: Destruction complete
+I, [2017-04-24T13:27:36.324041 #27085]  INFO -- default-ubuntu: aws_nat_gateway.nat_gw: Destruction complete
+I, [2017-04-24T13:27:36.326357 #27085]  INFO -- default-ubuntu: aws_eip.nat: Destroying...
+I, [2017-04-24T13:27:36.973790 #27085]  INFO -- default-ubuntu: aws_eip.nat: Destruction complete
+I, [2017-04-24T13:27:44.532630 #27085]  INFO -- default-ubuntu: aws_internet_gateway.ig_bastion: Still destroying... (1m10s elapsed)
+I, [2017-04-24T13:27:45.079057 #27085]  INFO -- default-ubuntu: aws_instance.bastion: Still destroying... (10s elapsed)
+I, [2017-04-24T13:27:54.532781 #27085]  INFO -- default-ubuntu: aws_internet_gateway.ig_bastion: Still destroying... (1m20s elapsed)
+I, [2017-04-24T13:27:55.079206 #27085]  INFO -- default-ubuntu: aws_instance.bastion: Still destroying... (20s elapsed)
+I, [2017-04-24T13:28:04.533260 #27085]  INFO -- default-ubuntu: aws_internet_gateway.ig_bastion: Still destroying... (1m30s elapsed)
+I, [2017-04-24T13:28:05.079557 #27085]  INFO -- default-ubuntu: aws_instance.bastion: Still destroying... (30s elapsed)
+I, [2017-04-24T13:28:14.533472 #27085]  INFO -- default-ubuntu: aws_internet_gateway.ig_bastion: Still destroying... (1m40s elapsed)
+I, [2017-04-24T13:28:15.079939 #27085]  INFO -- default-ubuntu: aws_instance.bastion: Still destroying... (40s elapsed)
+I, [2017-04-24T13:28:20.186093 #27085]  INFO -- default-ubuntu: aws_internet_gateway.ig_bastion: Destruction complete
+I, [2017-04-24T13:28:25.080219 #27085]  INFO -- default-ubuntu: aws_instance.bastion: Still destroying... (50s elapsed)
+I, [2017-04-24T13:28:25.644119 #27085]  INFO -- default-ubuntu: aws_instance.bastion: Destruction complete
+I, [2017-04-24T13:28:25.645656 #27085]  INFO -- default-ubuntu: aws_security_group.bastion: Destroying...
+I, [2017-04-24T13:28:25.645789 #27085]  INFO -- default-ubuntu: aws_subnet.bastion: Destroying...
+I, [2017-04-24T13:28:25.865519 #27085]  INFO -- default-ubuntu: aws_subnet.bastion: Destruction complete
+I, [2017-04-24T13:28:26.274971 #27085]  INFO -- default-ubuntu: aws_security_group.bastion: Destruction complete
+I, [2017-04-24T13:28:26.276418 #27085]  INFO -- default-ubuntu: aws_security_group.server: Destroying...
+I, [2017-04-24T13:28:26.830307 #27085]  INFO -- default-ubuntu: aws_security_group.server: Destruction complete
+I, [2017-04-24T13:28:26.831396 #27085]  INFO -- default-ubuntu: aws_vpc.vpc_bastion: Destroying...
+I, [2017-04-24T13:28:27.080570 #27085]  INFO -- default-ubuntu: aws_vpc.vpc_bastion: Destruction complete
+I, [2017-04-24T13:28:27.097176 #27085]  INFO -- default-ubuntu: 
+I, [2017-04-24T13:28:27.097357 #27085]  INFO -- default-ubuntu: Apply complete! Resources: 0 added, 0 changed, 14 destroyed.
+I, [2017-04-24T13:28:27.115818 #27085]  INFO -- default-ubuntu: Finished destroying <default-ubuntu> (2m1.83s).
