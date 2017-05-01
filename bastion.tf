@@ -8,7 +8,7 @@ resource "aws_instance" "bastion" {
   subnet_id                   = "${aws_subnet.bastion.id}"
   associate_public_ip_address = true
   
-  tags = {
+  tags {
     Name = "bastion"
   }
 }
